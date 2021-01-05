@@ -11,12 +11,12 @@ public class Song {
   private String strReleaseDate;
 
   //Constructor
-  public Song(int intSongID, String strSongName, String strGenre, int intViews, int dblLength, String strReleaseDate) {
+  public Song(int intSongID, String strSongName, String strGenre, int intViews, int intLength, String strReleaseDate) {
     this.intSongID = intSongID;
     this.strSongName = strSongName;
     this.strGenre = strGenre;
     this.intViews = intViews;
-    this.dblLength = dblLength;
+    this.intLength = intLength;
     this.strReleaseDate = strReleaseDate;
     //System.out.println(strSongName);
   }

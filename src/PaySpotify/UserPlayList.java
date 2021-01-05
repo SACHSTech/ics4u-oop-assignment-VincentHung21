@@ -3,15 +3,41 @@ package PaySpotify;
 public class UserPlayList extends BasePlayList {
 
   //Instance Variables
-  private double dblListeningFee;
-  private String OwnerID;
+  private int intListeningFee;
+  private String strOwnerID;
   private String strLastModified;
 
   //Creating Object
-  public UserPlayList(String strName, int intTotalSongs, int intFollowing, double dblListeningFee, String OwnerID, String strLastModified) {
+  public UserPlayList(String strName, int intTotalSongs, int intFollowing, int intListeningFee, String strOwnerID, String strLastModified) {
     super(strName, intTotalSongs, intFollowing);
-    this.dblListeningFee = dblListeningFee;
-    this.OwnerID = OwnerID;
+    this.intListeningFee = intListeningFee;
+    this.strOwnerID = strOwnerID;
     this.strLastModified = strLastModified;
+  }
+
+  //Getter & Setter Methods
+
+  public int getListeningFee(){
+    return intListeningFee;
+  }
+
+  public String getOwnerID(){
+    return strOwnerID;
+  }
+
+  public String getLastModified(){
+    return strLastModified;
+  }
+
+  public void setListeningFee(int intchange){
+    intListeningFee = intchange;
+  }
+
+  public void setOwnerID(String strchange){
+    strOwnerID = strchange;
+  }
+
+  public void setLastModified(String strchange){
+    strLastModified = strchange;
   }
 }

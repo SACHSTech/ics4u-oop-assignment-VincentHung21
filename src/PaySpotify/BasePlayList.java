@@ -17,4 +17,32 @@ public class BasePlayList {
   public Song[] getSongList(){
     return SongList;
   }
+
+  public String getName(){
+    return strName;
+  }
+
+  public int getTotalSongs(){
+    return intTotalSongs;
+  }
+
+  public int getFollowing(){
+    return intFollowing;
+  }
+
+  public void setSongList(Song newsong, int intx){
+    SongList[intx] = newsong;
+  }
+
+  public void setName(String strchange){
+    strName = strchange;
+  }
+
+  public void setTotalSongs(int intchange){
+    intTotalSongs = intchange;
+  }
+
+  public void setFollowing(int intchange){
+    intFollowing = intchange;
+  }
 }
