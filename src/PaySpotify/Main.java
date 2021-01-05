@@ -19,7 +19,7 @@ public class Main {
 
 
     int intcount = 0;
-    int intx = 0;
+    int intsongsnumber = 0;
     int intSongID;
     String strSongName;
     String strGenre;
@@ -42,9 +42,9 @@ public class Main {
         intcount++;
         strDate = values[intcount];
         intcount++;
-        AllSongs[intx] = new Song(intSongID, strSongName, strGenre, intViews, intLength, strDate);
+        AllSongs[intsongsnumber] = new Song(intSongID, strSongName, strGenre, intViews, intLength, strDate);
         System.out.println("loaded");
-        intx++;
+        intsongsnumber++;
       }
       
       for (String str : values) {

@@ -1,4 +1,5 @@
 package PaySpotify;
+import java.io.*;
 
 public class BasePlayList {
   private Song[] SongList;
@@ -45,4 +46,36 @@ public class BasePlayList {
   public void setFollowing(int intchange){
     intFollowing = intchange;
   }
+
+  private int findPlayListLength(String strfilename) throws IOException {
+    //Song Object Array Creation Variables
+    int intlength = 0;
+    String[] values;
+
+    BufferedReader firstcount = new BufferedReader(new FileReader("src/PaySpotify/" + strfilename + ".txt"));
+    String line = null;
+    while ((line = firstcount.readLine()) != null) {
+      values = line.split(",");
+     intlength++;
+    }
+    firstcount.close();
+    return intlength;
+  }
+
+  public Song[] createPlayList(String strfilename) {
+    Song [] playlist;
+    playlist = new Song[findPlayListLength(strfilename)];
+    int intcount = 0;
+    int intsongsnumber = 0;
+    int intSongID;
+    String strSongName;
+    String strGenre;
+    int intViews;
+    int intLength;
+    String strDate;
+
+    BufferedReader reader = new BufferedReader(new FileReader("src/PaySpotify/" + strfilename + ".txt"));
+
+  }
+  */
 }
