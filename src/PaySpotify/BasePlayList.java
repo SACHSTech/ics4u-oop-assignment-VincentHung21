@@ -7,12 +7,13 @@ public class BasePlayList {
   private int intTotalSongs;
   private int intFollowing;
 
-  public BasePlayList(String strName, int intTotalSongs, int intFollowing){
+  public BasePlayList(String strName, int intTotalSongs, int intFollowing) {
     this.strName = strName;
     this.intTotalSongs = intTotalSongs;
     this.intFollowing = intFollowing;
-    SongList = new Song[intTotalSongs];
+    SongList = AllSongs();
   }
+  
 
   //Get & Set Methods
   public Song[] getSongList(){
@@ -47,35 +48,11 @@ public class BasePlayList {
     intFollowing = intchange;
   }
 
-  private int findPlayListLength(String strfilename) throws IOException {
-    //Song Object Array Creation Variables
-    int intlength = 0;
-    String[] values;
-
-    BufferedReader firstcount = new BufferedReader(new FileReader("src/PaySpotify/" + strfilename + ".txt"));
-    String line = null;
-    while ((line = firstcount.readLine()) != null) {
-      values = line.split(",");
-     intlength++;
-    }
-    firstcount.close();
-    return intlength;
+  public Song[] AllSongs() {
+      Song[] SongList = new Song[2];
+      SongList[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",100,241,"May 15 2020");
+      SongList[1] = new Song(2,"Counting Stars","Orchestral",100,250,"May 15 2020");
+      SongList[2] = new Song(3,"Chromatic Delusion","Orchestral",100,249,"May 15 2020");
+      return SongList;
   }
-
-  public Song[] createPlayList(String strfilename) {
-    Song [] playlist;
-    playlist = new Song[findPlayListLength(strfilename)];
-    int intcount = 0;
-    int intsongsnumber = 0;
-    int intSongID;
-    String strSongName;
-    String strGenre;
-    int intViews;
-    int intLength;
-    String strDate;
-
-    BufferedReader reader = new BufferedReader(new FileReader("src/PaySpotify/" + strfilename + ".txt"));
-
-  }
-  */
 }

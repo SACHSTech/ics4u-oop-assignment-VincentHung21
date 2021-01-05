@@ -1,4 +1,6 @@
 package PaySpotify;
+import java.io.*;
+
 
 public class Song {
 
@@ -68,6 +70,14 @@ public class Song {
 
   public void setReleaseDate(String strchange){
     strReleaseDate = strchange;
+  }
+
+  public Song[] AllSongs() {
+      Song[] SongList = new Song[2];
+      SongList[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",100,241,"May 15 2020");
+      SongList[1] = new Song(2,"Counting Stars","Orchestral",100,250,"May 15 2020");
+      SongList[2] = new Song(3,"Chromatic Delusion","Orchestral",100,249,"May 15 2020");
+      return SongList;
   }
 }
    
