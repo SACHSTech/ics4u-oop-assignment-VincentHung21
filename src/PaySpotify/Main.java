@@ -24,14 +24,16 @@ public class Main {
       ClearConsole();
         if (strchoice.equals("1")) {
           UserPlayList userplaylist = new UserPlayList("My Playlist", 3, 5, 1, "Me", "March 2, 2019");
+          userplaylist.readData();
           userplaylist.ShowUserPlayListDetail();
           String strinner = "";
           strinner = reader.readLine();
+          //User Purchased Playlist 1
           if (strinner.equals("Y")) {
             ClearConsole();
             System.out.println("Thank You.");
             System.out.println("You Have Been Charged " + userplaylist.getListeningFee() + "$");
-
+            userplaylist.ShowUserPlayListSong();
           }else{
             ClearConsole();
           }

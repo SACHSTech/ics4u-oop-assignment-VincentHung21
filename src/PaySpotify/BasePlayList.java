@@ -47,15 +47,20 @@ public abstract class BasePlayList {
     intFollowing = intchange;
   }
 
-  public abstract Song[] readData();
+  public abstract void readData();
 
   //public abstract void printData();
 
-  public void ShowBasePlayListDetail(){
-          System.out.println ("");
-          System.out.println("Playlist Name: " + strName);
-          System.out.println("Total Songs: " + intTotalSongs);
-          System.out.println("Total Times Saved: " + intFollowing);
+  public void ShowBasePlayListDetail() {
+    System.out.println ("");
+    System.out.println("Playlist Name: " + strName);
+    System.out.println("Total Songs: " + intTotalSongs);
+    System.out.println("Total Times Saved: " + intFollowing);
           
+  }
+  public void ShowBasePlayListSong() {
+    for (int i = 0 ; i < intTotalSongs ; i++) {
+      SongList[i].ShowSongDetail();
+    }
   }
 }

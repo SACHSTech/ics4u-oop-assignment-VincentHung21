@@ -41,12 +41,10 @@ public class UserPlayList extends BasePlayList {
     strLastModified = strchange;
   }
 
-  public Song[] readData() {
-      Song[] SongList = new Song[3];
-      SongList[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",100,241,"May 15 2020","illusions of the heart");
-      SongList[1] = new Song(2,"Counting Stars","Orchestral",100,250,"May 15 2020","illusions of the heart");
-      SongList[2] = new Song(3,"Chromatic Delusion","Orchestral",100,249,"May 15 2020","illusions of the heart");
-      return SongList;
+  public void readData() {
+      SongList[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",241,"May 15 2020","illusions of the heart");
+      SongList[1] = new Song(2,"Counting Stars","Orchestral",250,"May 15 2020","illusions of the heart");
+      SongList[2] = new Song(3,"Chromatic Delusion","Orchestral",249,"May 15 2020","illusions of the heart");
   }
 
   public void printData() {
@@ -59,5 +57,10 @@ public class UserPlayList extends BasePlayList {
     System.out.println("Price: " + intListeningFee + "$");
     System.out.println("Do you want to purchase? (Y/N)");
     System.out.println ("");
+
+  }
+
+  public void ShowUserPlayListSong() {
+    ShowBasePlayListSong();
   }
 }

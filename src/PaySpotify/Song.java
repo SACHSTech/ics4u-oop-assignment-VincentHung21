@@ -8,17 +8,15 @@ public class Song {
   private int intSongID;
   private String strSongName;
   private String strGenre;
-  private int intViews;
   private int intLength;
   private String strReleaseDate;
   private String strAlbum;
 
   //Constructor
-  public Song(int intSongID, String strSongName, String strGenre, int intViews, int intLength, String strReleaseDate, String strAlbum) {
+  public Song(int intSongID, String strSongName, String strGenre, int intLength, String strReleaseDate, String strAlbum) {
     this.intSongID = intSongID;
     this.strSongName = strSongName;
     this.strGenre = strGenre;
-    this.intViews = intViews;
     this.intLength = intLength;
     this.strReleaseDate = strReleaseDate;
     this.strAlbum = strAlbum;
@@ -36,10 +34,6 @@ public class Song {
 
   public String getGenre(){
     return strGenre;
-  }
-
-  public int getViews(){
-    return intViews;
   }
 
   public int getLength(){
@@ -66,10 +60,6 @@ public class Song {
     strGenre = strchange;
   }
 
-  public void setViews(int intchange){
-    intViews = intchange;
-  }
-
   public void setLength(int intchange){
     intLength = intchange;
   }
@@ -81,7 +71,7 @@ public class Song {
   public void setAlbum(String strchange){
     strAlbum = strchange;
   }
-
+  /*
   public Song[] AllSongs() {
       Song[] SongList = new Song[3];
       SongList[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",241,"May 15 2020","illusions of the heart");
@@ -89,6 +79,7 @@ public class Song {
       SongList[2] = new Song(3,"Chromatic Delusion","Orchestral",249,"May 15 2020","illusions of the heart");
       return SongList;
   }
+  */
 
   public void ShowSongDetail() {
     System.out.println("Song ID: " + intSongID);
