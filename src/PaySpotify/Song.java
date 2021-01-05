@@ -18,9 +18,13 @@ public class Song {
     this.intViews = intViews;
     this.dblLength = dblLength;
     this.strReleaseDate = strReleaseDate;
+    //System.out.println(strSongName);
   }
 
   //Create Getter & Setter Methods
+  public int getSongID(){
+    return intSongID;
+  }
   
 }
    
