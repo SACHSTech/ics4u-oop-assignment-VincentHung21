@@ -1,8 +1,3 @@
-1,Beat it1,Michael Jackson,3:35,Rock,Michael Jackson Greatest Hit
-2,Beat it,Michael Jackson,3:35,Rock,Michael Jackson Greatest Hit
-3,Beat it3,Michael Jackson,3:35,Rock,Michael Jackson Greatest Hit
-4,Beat it,Michael Jackson,3:35,Rock,Michael Jackson Greatest Hit
-5,Beat it5,Michael Jackson,3:35,Rock,Michael Jackson Greatest Hit
-6,Beat it6,Michael Jackson,3:35,Rock,Michael Jackson Greatest Hit
-7,Beat it7,Michael Jackson,3:35,Rock,Michael Jackson Greatest Hit
-8,Beat it,Michael Jackson,3:35,Rock,Michael Jackson Greatest Hit
+1,I wish you would come closer and hold me,Orchestral,100,241,May 15 2020
+2,Counting Stars,Orchestral,100,250, May 15 2020
+3,Chromatic Delusion,Orchestral,100,249,May 15 2020

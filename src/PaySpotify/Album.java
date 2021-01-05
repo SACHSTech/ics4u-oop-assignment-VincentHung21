@@ -1,6 +1,7 @@
 package PaySpotify;
 
 public class Album extends BasePlayList {
+  private Song[] SongList;
   private double dblListeningFee;
   private int intFeaturedSong;
   private String strProducer;
