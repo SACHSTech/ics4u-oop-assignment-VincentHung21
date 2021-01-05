@@ -1,6 +1,8 @@
 package PaySpotify;
 
 public class Song {
+
+  //Instance Variables
   private int intSongID;
   private String strSongName;
   private String strGenre;
@@ -8,6 +10,7 @@ public class Song {
   private double dblLength;
   private String strReleaseDate;
 
+  //Create Object
   public Song(int intSongID, String strSongName, String strGenre, int intViews, double dblLength, String strReleaseDate) {
     this.intSongID = intSongID;
     this.strSongName = strSongName;
@@ -16,5 +19,8 @@ public class Song {
     this.dblLength = dblLength;
     this.strReleaseDate = strReleaseDate;
   }
+
+  //Create Getter & Setter Methods
+  
 }
    
