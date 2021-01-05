@@ -1,7 +1,7 @@
 package PaySpotify;
 import java.io.*;
 
-public class BasePlayList {
+public abstract class BasePlayList {
   private Song[] SongList;
   private String strName;
   private int intTotalSongs;
@@ -11,7 +11,6 @@ public class BasePlayList {
     this.strName = strName;
     this.intTotalSongs = intTotalSongs;
     this.intFollowing = intFollowing;
-    SongList = AllSongs();
   }
   
 
@@ -48,11 +47,15 @@ public class BasePlayList {
     intFollowing = intchange;
   }
 
-  public Song[] AllSongs() {
-      Song[] SongList = new Song[2];
-      SongList[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",100,241,"May 15 2020");
-      SongList[1] = new Song(2,"Counting Stars","Orchestral",100,250,"May 15 2020");
-      SongList[2] = new Song(3,"Chromatic Delusion","Orchestral",100,249,"May 15 2020");
-      return SongList;
+  public abstract Song[] readData();
+
+  //public abstract void printData();
+
+  public void ShowBasePlayListDetail(){
+          System.out.println ("");
+          System.out.println("Playlist Name: " + strName);
+          System.out.println("Total Songs: " + intTotalSongs);
+          System.out.println("Total Times Saved: " + intFollowing);
+          
   }
 }
