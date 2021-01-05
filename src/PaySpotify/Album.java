@@ -1,12 +1,14 @@
 package PaySpotify;
 
-public class Channel extends BasePlayList {
-  private int intListeningFee;
+public class Album extends BasePlayList {
+  private double dblListeningFee;
   private int intFeaturedSong;
-  priavte String strProducer;
+  private String strProducer;
 
-  public UserPlayList(String strName, int intTotalSongs, int intFollowing, double dblListeningFee, String strArtist) {
+  public Album(String strName, int intTotalSongs, int intFollowing, double dblListeningFee, int intFeaturedSong, String strProducer) {
     super(strName, intTotalSongs, intFollowing);
     this.dblListeningFee = dblListeningFee;
-    this.intFeat
+    this.intFeaturedSong = intFeaturedSong;
+    this.strProducer = strProducer;
   }
+}
