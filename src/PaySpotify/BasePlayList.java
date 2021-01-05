@@ -10,7 +10,11 @@ public class BasePlayList {
     this.strName = strName;
     this.intTotalSongs = intTotalSongs;
     this.intFollowing = intFollowing;
-    
+    SongList = new Song[intTotalSongs];
   }
 
+  //Get & Set Methods
+  public Song[] getSongList(){
+    return SongList;
+  }
 }
