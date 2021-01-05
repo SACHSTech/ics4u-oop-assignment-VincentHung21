@@ -1,7 +1,6 @@
 package PaySpotify;
 
 public class Channel extends BasePlayList {
-  private Song[] SongList;
   private double dblListeningFee;
   private String strArtist;
 

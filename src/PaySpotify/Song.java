@@ -7,11 +7,11 @@ public class Song {
   private String strSongName;
   private String strGenre;
   private int intViews;
-  private double dblLength;
+  private int intLength;
   private String strReleaseDate;
 
-  //Create Object
-  public Song(int intSongID, String strSongName, String strGenre, int intViews, double dblLength, String strReleaseDate) {
+  //Constructor
+  public Song(int intSongID, String strSongName, String strGenre, int intViews, int dblLength, String strReleaseDate) {
     this.intSongID = intSongID;
     this.strSongName = strSongName;
     this.strGenre = strGenre;
@@ -25,6 +25,49 @@ public class Song {
   public int getSongID(){
     return intSongID;
   }
+
+  public String getSongName(){
+    return strSongName;
+  }
+
+  public String getGenre(){
+    return strGenre;
+  }
+
+  public int getViews(){
+    return intViews;
+  }
+
+  public int getLength(){
+    return intLength;
+  }
+
+  public String getReleaseDate(){
+    return strReleaseDate;
+  }
+
+  public void setSongID(int intchange){
+    intSongID = intchange;
+  }
+
+  public void setSongName(String strchange){
+    strSongName = strchange;
+  }
   
+  public void setGenre(String strchange){
+    strGenre = strchange;
+  }
+
+  public void setViews(int intchange){
+    intViews = intchange;
+  }
+
+  public void setLength(int intchange){
+    intLength = intchange;
+  }
+
+  public void setReleaseDate(String strchange){
+    strReleaseDate = strchange;
+  }
 }
    
