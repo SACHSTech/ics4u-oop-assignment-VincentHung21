@@ -15,15 +15,17 @@ public class Main {
     System.out.println ("1) User PlayList ($1)");
     System.out.println ("2) Artists Channel ($2)");
     System.out.println ("3) Album ($3)");
+    System.out.println ("Type 'Done' to exit program");
     System.out.println (""); 
 
       try {
-      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-      strchoice = reader.readLine();
-      //Clear Console
-      ClearConsole();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        strchoice = reader.readLine();
+        //Clear Console
+        ClearConsole();
+        //Choice 1
         if (strchoice.equals("1")) {
-          UserPlayList userplaylist = new UserPlayList("My Playlist", 3, 5, 1, "Me", "March 2, 2019");
+          UserPlayList userplaylist = new UserPlayList("My Playlist", 5, 5, 1, "Me", "March 2, 2019");
           userplaylist.readData();
           userplaylist.ShowUserPlayListDetail();
           String strinner = "";
@@ -33,20 +35,60 @@ public class Main {
             ClearConsole();
             System.out.println("Thank You.");
             System.out.println("You Have Been Charged " + userplaylist.getListeningFee() + "$");
+            System.out.println (""); 
             userplaylist.ShowUserPlayListSong();
-          }else{
+          }
+          else {
+            ClearConsole();
+          }
+        }
+        //Choice 2
+        if (strchoice.equals("2")) {
+          Album album = new Album("Illusion of The Heart", 8, 12314, 6, "Illusion of The Heart", "Seycara");
+          album.readData();
+          album.ShowAlbumDetail();
+          String strinner = "";
+          strinner = reader.readLine();
+          //User Purchased Playlist 1
+          if (strinner.equals("Y")) {
+            ClearConsole();
+            System.out.println("Thank You.");
+            System.out.println("You Have Been Charged " + album.getListeningFee() + "$");
+            System.out.println (""); 
+            album.ShowAlbumSong();
+          }
+          else {
+            ClearConsole();
+          }
+        }
+        //Choice 3
+        if (strchoice.equals("3")) {
+          Album album = new Album("Illusion of The Heart", 8, 12314, 6, "Illusion of The Heart", "Seycara");
+          album.readData();
+          album.ShowAlbumDetail();
+          String strinner = "";
+          strinner = reader.readLine();
+          //User Purchased Playlist 1
+          if (strinner.equals("Y")) {
+            ClearConsole();
+            System.out.println("Thank You.");
+            System.out.println("You Have Been Charged " + album.getListeningFee() + "$");
+            System.out.println (""); 
+            album.ShowAlbumSong();
+          }
+          else {
             ClearConsole();
           }
         }
       } catch(IOException Main) {
-        System.out.println("Message");
+        System.out.println(" Error");
       }
     }
   }
 
-  public static void ClearConsole(){
-    for (int x = 0 ; x < 1 ; x++){
-        System.out.println("\r"); 
-      }
+  public static void ClearConsole() {
+    for (int x = 0 ; x < 50 ; x++){
+      System.out.println("\r"); 
+    }
   }
 }

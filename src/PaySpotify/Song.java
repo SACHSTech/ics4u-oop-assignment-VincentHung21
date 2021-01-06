@@ -1,6 +1,6 @@
 package PaySpotify;
 import java.io.*;
-
+import java.util.concurrent.TimeUnit;
 
 public class Song {
 
@@ -82,12 +82,27 @@ public class Song {
   */
 
   public void ShowSongDetail() {
-    System.out.println("Song ID: " + intSongID);
-    System.out.println("Song Name: " + strSongName);
-    System.out.println("Genre: " + strGenre);
-    System.out.println("Length: " + intLength + " seconds");
-    System.out.println("Released " + strReleaseDate);
-    System.out.println("Album " + strAlbum);
+    System.out.println("Song ID: " + getSongID());
+    System.out.println("Song Name: " + getSongName());
+    System.out.println("Genre: " + getGenre());
+    System.out.println("Length: " + getLength() + " seconds");
+    System.out.println("Released " + getReleaseDate());
+    System.out.println("Album " + getAlbum());
+    PlaySong();
+    System.out.println("");
+    System.out.println("");
+  }
+
+  private void PlaySong() {
+    try {
+      System.out.print("Playing Song ");
+      for (int intx = 0 ; intx < 3 ; intx++) {
+        TimeUnit.SECONDS.sleep(1);
+        System.out.print("==========>>");
+      }
+    } catch (InterruptedException Song) {
+      System.out.println("PlaySong Exception");
+    }
   }
 }
    
