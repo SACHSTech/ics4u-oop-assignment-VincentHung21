@@ -4,13 +4,14 @@ import java.io.*;
 public abstract class BasePlayList {
   private Song[] SongList;
   private String strName;
-  private int intTotalSongs;
+  private int intTotalSongs = 0;
   private int intFollowing;
 
   public BasePlayList(String strName, int intTotalSongs, int intFollowing) {
     this.strName = strName;
     this.intTotalSongs = intTotalSongs;
     this.intFollowing = intFollowing;
+    SongList = new Song[intTotalSongs];
   }
   
 
@@ -53,9 +54,9 @@ public abstract class BasePlayList {
 
   public void ShowBasePlayListDetail() {
     System.out.println ("");
-    System.out.println("Playlist Name: " + strName);
-    System.out.println("Total Songs: " + intTotalSongs);
-    System.out.println("Total Times Saved: " + intFollowing);
+    System.out.println("Playlist Name: " + getName());
+    System.out.println("Total Songs: " + getTotalSongs());
+    System.out.println("Total Times Saved: " + getFollowing());
           
   }
   public void ShowBasePlayListSong() {

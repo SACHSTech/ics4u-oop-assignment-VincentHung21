@@ -42,9 +42,10 @@ public class UserPlayList extends BasePlayList {
   }
 
   public void readData() {
-      SongList[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",241,"May 15 2020","illusions of the heart");
-      SongList[1] = new Song(2,"Counting Stars","Orchestral",250,"May 15 2020","illusions of the heart");
-      SongList[2] = new Song(3,"Chromatic Delusion","Orchestral",249,"May 15 2020","illusions of the heart");
+
+      this.getSongList()[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",241,"May 15 2020","illusions of the heart");
+      this.getSongList()[1] = new Song(2,"Counting Stars","Orchestral",250,"May 15 2020","illusions of the heart");
+      this.getSongList()[2] = new Song(3,"Chromatic Delusion","Orchestral",249,"May 15 2020","illusions of the heart");
   }
 
   public void printData() {
@@ -53,8 +54,8 @@ public class UserPlayList extends BasePlayList {
 
   public void ShowUserPlayListDetail(){
     ShowBasePlayListDetail();
-    System.out.println("Created by: " + strOwnerID);
-    System.out.println("Price: " + intListeningFee + "$");
+    System.out.println("Created by: " + getOwnerID());
+    System.out.println("Price: " + getListeningFee() + "$");
     System.out.println("Do you want to purchase? (Y/N)");
     System.out.println ("");
 

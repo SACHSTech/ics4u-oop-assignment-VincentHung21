@@ -45,7 +45,7 @@ public class Main {
   }
 
   public static void ClearConsole(){
-    for (int x = 0 ; x < 100 ; x++){
+    for (int x = 0 ; x < 1 ; x++){
         System.out.println("\r"); 
       }
   }
