@@ -1,17 +1,20 @@
 package PaySpotify;
 
 public class Album extends MusicLibrary {
+  //Instance Variables
   private int intListeningFee;
   private String strFeaturedSong;
   private String strProducer;
 
-  public Album(String strName, int intTotalSongs, int intFollowing, int intListeningFee, String strFeaturedSong, String strProducer) {
+  //Constructor
+  public Album(String strName, int intTotalSongs, int intFollowing, int intListeningFee,   String strFeaturedSong, String strProducer) {
     super(strName, intTotalSongs, intFollowing);
     this.intListeningFee = intListeningFee;
     this.strFeaturedSong = strFeaturedSong;
     this.strProducer = strProducer;
   }
 
+  //Get & Set Methods
   public int getListeningFee(){
     return intListeningFee;
   }
@@ -35,6 +38,7 @@ public class Album extends MusicLibrary {
   public void setProducer(String strchange){
     strProducer = strchange;
   }
+  //Abstract Method
   public void readData() {
       this.getSongList()[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",241,"May 15 2020","Illusion of The Heart");
       this.getSongList()[1] = new Song(2,"Counting Stars","Orchestral",250,"May 15 2020","Illusion of The Heart");
@@ -45,6 +49,8 @@ public class Album extends MusicLibrary {
       this.getSongList()[6] = new Song(7,"Will I Ever See You Again","Orchestral",288,"May 15 2020","Illusion of The Heart");
       this.getSongList()[7] = new Song(8,"Epilogue: Embrace","Orchestral",73,"May 15 2020","Illusion of The Heart");
   }
+
+  //Object Methods
   public void ShowAlbumSong() {
     ShowMusicLibrarySong();
   }

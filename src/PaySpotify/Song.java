@@ -81,6 +81,7 @@ public class Song {
   }
   */
 
+  //Object Methods
   public void ShowSongDetail() {
     System.out.println("Song ID: " + getSongID());
     System.out.println("Song Name: " + getSongName());
@@ -93,6 +94,7 @@ public class Song {
     System.out.println("");
   }
 
+  //Private Helper Method
   private void PlaySong() {
     try {
       System.out.print("Playing Song ");

@@ -41,6 +41,7 @@ public class UserPlayList extends MusicLibrary {
     strLastModified = strchange;
   }
 
+  //Abstract Method
   public void readData() {
 
       this.getSongList()[0] = new Song(1,"I wish you would come closer and hold me","Orchestral",241,"May 15 2020","illusions of the heart");
@@ -50,10 +51,7 @@ public class UserPlayList extends MusicLibrary {
       this.getSongList()[4] = new Song(5,"luv u","Orchestral",276,"May 15 2020","illusions of the heart");
   }
 
-  public void printData() {
-
-  }
-
+  //Object Methods
   public void ShowUserPlayListDetail(){
     ShowMusicLibraryDetail();
     System.out.println("Created by: " + getOwnerID());
@@ -62,6 +60,7 @@ public class UserPlayList extends MusicLibrary {
     System.out.println ("");
 
   }
+
 
   public void ShowUserPlayListSong() {
     ShowMusicLibrarySong();
