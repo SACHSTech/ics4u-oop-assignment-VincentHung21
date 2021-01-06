@@ -1,7 +1,7 @@
 # ICS4U OOP Assignment
 
 ### Class Diagram
-!["Class Diagram"](https://repl.it/@VincentHung3/ics4u-oop-assignment-VincentHung21#ClassDiagram.png) 
+!["Class Diagram"](https://github.com/SACHSTech/ics4u-oop-assignment-VincentHung21/blob/main/ClassDiagram.png) 
 
 ## Summary
 This system is a model of a song database/catalogue. More specifically the different types of lists and groups the songs can be divided into. The program has 3 types of groups that inherit certain shared variables from a base music library, these variables include name, a Song object array, etc. 
