@@ -12,6 +12,16 @@ public class Song {
   private String strReleaseDate;
   private String strAlbum;
 
+  /**
+  * Constructor - creates new instance of an Song object. Aggregation relation with {@link Album}, {@link Channel} and {@link UserPlayList}
+  *
+  * @param intSongID - ID for given song
+  * @param strSongName - Name of the song
+  * @param strGenre - The genre for the given song
+  * @param intLength - How long the song is in seconds
+  * @param strReleaseDate - When the song was first released
+  * @param strAlbum - The album the song is part of, if there is none it will be "no album"
+  */
   //Constructor
   public Song(int intSongID, String strSongName, String strGenre, int intLength, String strReleaseDate, String strAlbum) {
     this.intSongID = intSongID;
