@@ -5,12 +5,23 @@ package PaySpotify;
 * @author: V. Hung
 * 
 */
+
 public class Album extends MusicLibrary {
   //Instance Variables
   private int intListeningFee;
   private String strFeaturedSong;
   private String strProducer;
 
+  /**
+  * Constructor - creates new instance of an Album object.
+  *
+  * @param strName - The string that the collection of songs is called
+  * @param intTotalSongs - How many songs will be included in the list
+  * @param intFollowing - How many people have saved this song
+  * @param intListeningFee - The price of this playlist
+  * @param strFeaturedSong - The featured song of the Album
+  * @param strProducer - The producer who created the Album
+  */
   //Constructor
   public Album(String strName, int intTotalSongs, int intFollowing, int intListeningFee,   String strFeaturedSong, String strProducer) {
     super(strName, intTotalSongs, intFollowing);

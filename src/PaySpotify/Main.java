@@ -20,7 +20,7 @@ public class Main {
     System.out.println ("3) Album");
     System.out.println ("Type 'Done' to exit program");
     System.out.println (""); 
-    //Exception Handling (due to use input)
+    //Exception Handling (due to user input)
       try {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         strchoice = reader.readLine();

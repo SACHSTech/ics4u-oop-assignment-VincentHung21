@@ -11,6 +11,16 @@ public class Channel extends MusicLibrary {
   private String strArtist;
   private int intawards;
 
+  /**
+  * Constructor - creates new instance of an Album object.
+  *
+  * @param strName - The string that the collection of songs is called
+  * @param intTotalSongs - How many songs will be included in the list
+  * @param intFollowing - How many people have saved this song
+  * @param intListeningFee - The price of this playlist
+  * @param strArtist - The name of the channel list owner
+  * @param intawards - The amount of awards this Channel has won
+  */
   //Constructor
   public Channel(String strName, int intTotalSongs, int intFollowing, int intListeningFee, String strArtist, int intawards) {
     super(strName, intTotalSongs, intFollowing);

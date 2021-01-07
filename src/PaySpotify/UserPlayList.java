@@ -12,7 +12,17 @@ public class UserPlayList extends MusicLibrary {
   private String strOwnerID;
   private String strLastModified;
 
-  //Creating Object
+  //Constructor
+  /**
+  * Constructor - creates new instance of an UserPlayList object.
+  *
+  * @param strName - The string that the collection of songs is called
+  * @param intTotalSongs - How many songs will be included in the list
+  * @param intFollowing - How many people have saved this song
+  * @param intListeningFee - The price of the playlist
+  * @param strOwnerID - User ID of the creator of the playlist
+  * @param strLastModified - The date of when the playlist was last modified
+  */
   public UserPlayList(String strName, int intTotalSongs, int intFollowing, int intListeningFee, String strOwnerID, String strLastModified) {
     super(strName, intTotalSongs, intFollowing);
     this.intListeningFee = intListeningFee;
