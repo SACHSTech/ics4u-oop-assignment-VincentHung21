@@ -1,5 +1,10 @@
 package PaySpotify;
 
+/**
+* UserPlayList Class File
+* @author: V. Hung
+* 
+*/
 public class UserPlayList extends MusicLibrary {
 
   //Instance Variables

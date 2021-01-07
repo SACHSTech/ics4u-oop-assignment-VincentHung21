@@ -1,5 +1,10 @@
 package PaySpotify;
 
+/**
+* Channel Class File
+* @author: V. Hung
+* 
+*/
 public class Channel extends MusicLibrary {
   //Instance Variables
   private int intListeningFee;

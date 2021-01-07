@@ -1,5 +1,10 @@
 package PaySpotify;
 
+/**
+* Album Class File
+* @author: V. Hung
+* 
+*/
 public class Album extends MusicLibrary {
   //Instance Variables
   private int intListeningFee;

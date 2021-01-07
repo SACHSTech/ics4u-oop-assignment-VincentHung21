@@ -8,6 +8,14 @@ public abstract class MusicLibrary {
   private int intTotalSongs = 0;
   private int intFollowing;
 
+
+  /**
+  * Constructor - creates new instance of an MusicLibrary object. Super class for {@link Channel}, {@link Album}, and {@link UserPlayList}
+  *
+  * @param strName - The string that the collection of songs is called
+  * @param intTotalSongs - How many songs will be included in the list
+  * @param intFollowing - How many people have saved this song
+  */
   //Constructor 
   public MusicLibrary(String strName, int intTotalSongs, int intFollowing) {
     this.strName = strName;
